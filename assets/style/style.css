@@ -1,0 +1,185 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.Main-nav
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: rgb(5, 2, 17);
+}
+.Main-nav h1
+{
+  font-size: 32px;
+  color: #fff;
+}
+.Main-nav ul 
+{
+  display: flex;
+  align-items: center;
+}
+.Main-nav ul li
+{
+  margin: 5px 15px;
+}
+.Main-nav ul li a
+{
+  font-size: 24px;
+  color: #FFF;
+  text-decoration: none;
+}
+/* Hero */
+
+.Hero 
+{
+  width: 100%;
+  height: calc( 100vh - 77px );
+  background-color: #1abc9c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Hero .Image
+{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(2, 77, 2);
+  position: relative;
+}
+.Hero .Image img
+{
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  transition: 1s;
+}
+.Hero .Image img:hover
+{
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 30px;
+  rotate: 360deg;
+  transform: scale(1.2);
+}
+.Hero h2
+{
+  font-size: 55px;
+  color: #fff;
+  margin: 50px 0 20px 0;
+}
+.Hero ul 
+{
+  display: flex;
+  align-items: center;
+}
+.Hero ul li
+{
+  font-size: 26px;
+  color: #fff;
+  margin: 10px;
+}
+.Hero .Star
+{
+  color: #FFF;
+  font-size: 24px;
+  position: relative;
+}
+.Hero .Star::before
+{
+  content: "";
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 2px;
+  background-color: #FFF;
+}
+.Hero .Star::after
+{
+  content: "";
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 2px;
+  background-color: #FFF;
+}
+
+.main
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+main .box
+{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 40, 40);
+}
+main .box div
+{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: aqua;
+}
+/* main .box div::placeholder
+{
+
+} */
+
+@media(max-width:500px)
+{
+  .Main-nav
+  {
+    padding: 20px;
+  }
+  .Main-nav h1
+  {
+    font-size: 14px;
+  }
+  .Main-nav ul li
+  {
+    margin: 5px 8px;
+  }
+  .Main-nav ul li a
+  {
+    font-size: 12px;
+  }
+  .Hero 
+  {
+    height: calc( 100vh - 68px );
+  }
+  .Hero h2
+  {
+    font-size: 20px;
+  }
+  .Hero .Star
+  {
+    font-size: 16px;
+  }
+  .Hero ul li
+  {
+    font-size: 16px;
+    margin: 8px;
+  }
+}
